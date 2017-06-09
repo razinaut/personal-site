@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300|Ubuntu+Mono|VT323');
+
+body
+{
+    text-align: left;
+    font-family: "Rubik", sans-serif;
+    background-color: white;
+    background-image: url(../img/agsquare.png);
+    background-repeat: repeat;
+}
+
+h1
+{
+    text-align: left;
+    font-family: "Rubik", sans-serif;
+    color: #4B4F56;
+}
+
+a:link, a:visited
+{
+    text-decoration: none;
+    color: #4B4F56;
+}
+
+/* the following three because lol CSS centering */
+#main-outer
+{
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#main-middle
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#main-container
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+#basic-info
+{
+    text-align: right;
+}
+
+#my-photo
+{
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/me.jpg);
+    background-size: 100px;
+    background-position: center;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px)
+{
+    #my-photo
+    {
+        position: relative;
+        top: 50%;
+        transform: translateY(15%);
+    }
+}
+
+#social-links-wrapper
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 20px;
+}
+
+ul.social-links
+{
+    list-style-type: none;
+    display: inline;
+}
+
+ul.social-links li
+{
+    display: inline;
+    font-size: 1.75em;
+    padding: 3px;
+}
+
+/* social links tweaks */
+
+.fa-github-square:hover { color: #333333; }
+.fa-linkedin-square:hover { color: #00A0DC; }
+.fa-twitter-square:hover { color: #55ACEE; }
+.fa-instagram:hover { color: #E1306C; }
+.fa-flickr:hover { color: #FF0084; }
+.fa-quora:hover { color: #A82400; }
+.fa-spotify:hover { color: #2EBD59; }
+.fa-file-pdf-o:hover { color: #FF0000; }
+
+.circle
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 4px 7px 1px 0px;
+    float: left;
+} 
+
+.red
+{
+    background-color: #FC605C;
+    border: solid 1px #E14946;
+}
+
+.yellow
+{
+    background-color: #FDBC40;
+    border: solid 1px #E0A234;
+} 
+
+.green
+{
+    background-color: #34C749;
+    border: solid 1px #27AD36;
+}
+
+.input { color: #C7C7C7; }
+.string { color: #FFF1B7; }
+
+#terminal-titlebar
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: #E3E3E3;
+    border-radius: 4px 4px 0px 0px;
+    padding: 1px 9px 0px 6px;
+    height: 18px;
+}
+
+#terminal
+{
+    font-size: 14px;
+    background-color: #333333;
+    color: #CCCCCC;
+    font-family: "Ubuntu Mono", monospace;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 4px 4px;
+    line-height: 100%;
+}
+
+#terminal a
+{
+    color: #DDFFFF;
+}
+
+#terminal a:hover
+{
+    text-decoration: underline;
+}
